@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Nov 21 01:01:51 2022
+# Process ID: 28324
+# Current directory: D:/NCKU/Introduction to DIC/midterm_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25180 D:\NCKU\Introduction to DIC\midterm_project\midterm_project.xpr
+# Log file: D:/NCKU/Introduction to DIC/midterm_project/vivado.log
+# Journal file: D:/NCKU/Introduction to DIC/midterm_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/NCKU/Introduction to DIC/midterm_project/midterm_project.xpr}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testfixture [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{D:/NCKU/Introduction to DIC/midterm_project/golden.txt}}
+launch_simulation
+source testfixture.tcl
+restart
+run all
+close_sim
+launch_simulation
+source testfixture.tcl
+restart
+run all
+restart
+run all
+close_sim
+launch_simulation
+source testfixture.tcl
+restart
+run all
+close_sim
+launch_simulation
+source testfixture.tcl
+run all
+restart
+run all
+close_sim
+launch_simulation
+source testfixture.tcl
+close_sim
+launch_simulation
+source testfixture.tcl
+run all
+close_sim
+launch_simulation
+source testfixture.tcl
+run all
+close_sim
+launch_simulation
+close_project
+open_project {D:/NCKU/Introduction to DIC/midterm_project/midterm_project.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source testfixture.tcl
+run all
+close_sim
+launch_simulation
+source testfixture.tcl
+run all
+close_sim
+launch_simulation
+source testfixture.tcl
+restart
+run all
+close_sim
+launch_simulation
+launch_simulation
+source testfixture.tcl
+restart
+run all
+close_sim
+launch_simulation
+source testfixture.tcl
+run all
+close_sim
+launch_simulation
+source testfixture.tcl
+run all
+close_sim

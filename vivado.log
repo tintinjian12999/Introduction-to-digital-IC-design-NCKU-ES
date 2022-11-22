@@ -1,0 +1,2888 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Nov 21 01:01:51 2022
+# Process ID: 28324
+# Current directory: D:/NCKU/Introduction to DIC/midterm_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25180 D:\NCKU\Introduction to DIC\midterm_project\midterm_project.xpr
+# Log file: D:/NCKU/Introduction to DIC/midterm_project/vivado.log
+# Journal file: D:/NCKU/Introduction to DIC/midterm_project\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/xlinx/Vivado/2021.1/scripts/Vivado_init.tcl'
+start_gui
+open_project {D:/NCKU/Introduction to DIC/midterm_project/midterm_project.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xlinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:01:39 ; elapsed = 00:01:33 . Memory (MB): peak = 1262.426 ; gain = 122.629
+update_compile_order -fileset sources_1
+set_property top testfixture [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{D:/NCKU/Introduction to DIC/midterm_project/golden.txt}}
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1312.090 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source D:/NCKU/Introduction -notrace
+couldn't read file "D:/NCKU/Introduction": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 21 01:41:46 2022...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1312.090 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is correct
+  1 data is correct
+  2 data is correct
+  3 data is correct
+  4 data is correct
+  5 data is correct
+  6 data is correct
+  7 data is correct
+  8 data is correct
+  9 data is correct
+ 10 data is correct
+ 11 data is correct
+ 12 data is correct
+ 13 data is correct
+ 14 data is correct
+ 15 data is error, wrong: 14 , correct: 15
+ 16 data is error, wrong: 13 , correct: 14
+ 17 data is error, wrong: 12 , correct: 13
+ 18 data is error, wrong: 11 , correct: 12
+ 19 data is error, wrong: 10 , correct: 11
+ 20 data is error, wrong:  9 , correct: 10
+ 21 data is error, wrong:  8 , correct:  9
+ 22 data is error, wrong:  7 , correct:  8
+ 23 data is error, wrong:  6 , correct:  7
+ 24 data is error, wrong:  5 , correct:  6
+ 25 data is error, wrong:  4 , correct:  5
+ 26 data is error, wrong:  3 , correct:  4
+ 27 data is error, wrong:  2 , correct:  3
+ 28 data is error, wrong:  1 , correct:  2
+ 29 data is error, wrong:  0 , correct:  1
+ 30 data is error, wrong:  1 , correct:  0
+ 31 data is error, wrong:  3 , correct:  0
+ 32 data is error, wrong:  5 , correct:  2
+ 33 data is error, wrong:  7 , correct:  4
+ 34 data is error, wrong:  9 , correct:  6
+ 35 data is error, wrong: 11 , correct:  8
+ 36 data is error, wrong: 13 , correct: 10
+ 37 data is error, wrong: 15 , correct: 12
+ 38 data is error, wrong: 13 , correct: 14
+ 39 data is error, wrong: 11 , correct: 15
+ 40 data is error, wrong:  9 , correct: 13
+ 41 data is error, wrong:  7 , correct: 11
+ 42 data is error, wrong:  5 , correct:  9
+ 43 data is error, wrong:  3 , correct:  7
+ 44 data is error, wrong:  1 , correct:  5
+ 45 data is error, wrong: 15 , correct:  3
+ 46 data is error, wrong: 13 , correct:  1
+ 47 data is error, wrong: 11 , correct:  0
+ 48 data is error, wrong:  8 , correct:  3
+ 49 data is error, wrong:  5 , correct:  6
+ 50 data is error, wrong:  2 , correct:  9
+ 51 data is error, wrong: 15 , correct: 12
+ 52 data is error, wrong: 12 , correct: 15
+ 53 data is error, wrong:  9 , correct: 15
+ 54 data is error, wrong:  6 , correct: 12
+ 55 data is error, wrong:  3 , correct:  9
+ 56 data is error, wrong:  0 , correct:  6
+ 57 data is correct
+ 58 data is error, wrong:  6 , correct:  0
+ 59 data is error, wrong:  9 , correct:  0
+ 60 data is error, wrong: 10 , correct:  1
+ 61 data is error, wrong: 11 , correct:  2
+ 62 data is error, wrong: 12 , correct:  3
+ 63 data is error, wrong: 13 , correct:  4
+ 64 data is error, wrong: 14 , correct:  5
+ 65 data is error, wrong: 15 , correct:  6
+ 66 data is error, wrong: 14 , correct:  7
+ 67 data is error, wrong: 11 , correct: 10
+ 68 data is error, wrong:  8 , correct: 13
+ 69 data is error, wrong:  5 , correct: 15
+ 70 data is error, wrong:  2 , correct: 12
+ 71 data is error, wrong: 15 , correct:  9
+ 72 data is error, wrong: 12 , correct:  6
+ 73 data is error, wrong: 10 , correct:  4
+ 74 data is error, wrong:  8 , correct:  2
+ 75 data is error, wrong:  6 , correct:  0
+ 76 data is error, wrong:  4 , correct:  0
+ 77 data is correct
+ 78 data is error, wrong:  0 , correct:  4
+ 79 data is error, wrong:  3 , correct:  7
+ 80 data is error, wrong:  6 , correct: 10
+ 81 data is error, wrong:  9 , correct: 13
+ 82 data is error, wrong: 12 , correct: 15
+ 83 data is error, wrong: 15 , correct: 12
+ 84 data is error, wrong: 12 , correct:  9
+ 85 data is error, wrong:  9 , correct:  6
+ 86 data is error, wrong:  6 , correct:  3
+ 87 data is error, wrong:  3 , correct:  0
+ 88 data is correct
+ 89 data is correct
+ 90 data is correct
+ 91 data is correct
+ 92 data is correct
+ 93 data is correct
+ 94 data is correct
+ 95 data is correct
+ 96 data is correct
+ 97 data is correct
+ 98 data is correct
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1350.148 ; gain = 36.816
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1350.148 ; gain = 52.773
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+  0 data is correct
+  1 data is correct
+  2 data is correct
+  3 data is correct
+  4 data is correct
+  5 data is correct
+  6 data is correct
+  7 data is correct
+  8 data is correct
+  9 data is correct
+ 10 data is correct
+ 11 data is correct
+ 12 data is correct
+ 13 data is correct
+ 14 data is correct
+ 15 data is error, wrong: 14 , correct: 15
+ 16 data is error, wrong: 13 , correct: 14
+ 17 data is error, wrong: 12 , correct: 13
+ 18 data is error, wrong: 11 , correct: 12
+ 19 data is error, wrong: 10 , correct: 11
+ 20 data is error, wrong:  9 , correct: 10
+ 21 data is error, wrong:  8 , correct:  9
+ 22 data is error, wrong:  7 , correct:  8
+ 23 data is error, wrong:  6 , correct:  7
+ 24 data is error, wrong:  5 , correct:  6
+ 25 data is error, wrong:  4 , correct:  5
+ 26 data is error, wrong:  3 , correct:  4
+ 27 data is error, wrong:  2 , correct:  3
+ 28 data is error, wrong:  1 , correct:  2
+ 29 data is error, wrong:  0 , correct:  1
+ 30 data is error, wrong:  1 , correct:  0
+ 31 data is error, wrong:  3 , correct:  0
+ 32 data is error, wrong:  5 , correct:  2
+ 33 data is error, wrong:  7 , correct:  4
+ 34 data is error, wrong:  9 , correct:  6
+ 35 data is error, wrong: 11 , correct:  8
+ 36 data is error, wrong: 13 , correct: 10
+ 37 data is error, wrong: 15 , correct: 12
+ 38 data is error, wrong: 13 , correct: 14
+ 39 data is error, wrong: 11 , correct: 15
+ 40 data is error, wrong:  9 , correct: 13
+ 41 data is error, wrong:  7 , correct: 11
+ 42 data is error, wrong:  5 , correct:  9
+ 43 data is error, wrong:  3 , correct:  7
+ 44 data is error, wrong:  1 , correct:  5
+ 45 data is error, wrong: 15 , correct:  3
+ 46 data is error, wrong: 13 , correct:  1
+ 47 data is error, wrong: 11 , correct:  0
+ 48 data is error, wrong:  8 , correct:  3
+ 49 data is error, wrong:  5 , correct:  6
+ 50 data is error, wrong:  2 , correct:  9
+ 51 data is error, wrong: 15 , correct: 12
+ 52 data is error, wrong: 12 , correct: 15
+ 53 data is error, wrong:  9 , correct: 15
+ 54 data is error, wrong:  6 , correct: 12
+ 55 data is error, wrong:  3 , correct:  9
+ 56 data is error, wrong:  0 , correct:  6
+ 57 data is correct
+ 58 data is error, wrong:  6 , correct:  0
+ 59 data is error, wrong:  9 , correct:  0
+ 60 data is error, wrong: 10 , correct:  1
+ 61 data is error, wrong: 11 , correct:  2
+ 62 data is error, wrong: 12 , correct:  3
+ 63 data is error, wrong: 13 , correct:  4
+ 64 data is error, wrong: 14 , correct:  5
+ 65 data is error, wrong: 15 , correct:  6
+ 66 data is error, wrong: 14 , correct:  7
+ 67 data is error, wrong: 11 , correct: 10
+ 68 data is error, wrong:  8 , correct: 13
+ 69 data is error, wrong:  5 , correct: 15
+ 70 data is error, wrong:  2 , correct: 12
+ 71 data is error, wrong: 15 , correct:  9
+ 72 data is error, wrong: 12 , correct:  6
+ 73 data is error, wrong: 10 , correct:  4
+ 74 data is error, wrong:  8 , correct:  2
+ 75 data is error, wrong:  6 , correct:  0
+ 76 data is error, wrong:  4 , correct:  0
+ 77 data is correct
+ 78 data is error, wrong:  0 , correct:  4
+ 79 data is error, wrong:  3 , correct:  7
+ 80 data is error, wrong:  6 , correct: 10
+ 81 data is error, wrong:  9 , correct: 13
+ 82 data is error, wrong: 12 , correct: 15
+ 83 data is error, wrong: 15 , correct: 12
+ 84 data is error, wrong: 12 , correct:  9
+ 85 data is error, wrong:  9 , correct:  6
+ 86 data is error, wrong:  6 , correct:  3
+ 87 data is error, wrong:  3 , correct:  0
+ 88 data is correct
+ 89 data is correct
+ 90 data is correct
+ 91 data is correct
+ 92 data is correct
+ 93 data is correct
+ 94 data is correct
+ 95 data is correct
+ 96 data is correct
+ 97 data is correct
+ 98 data is correct
+ 99 data is correct
+-------------------   There are  71 errors   -------------------
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 100
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1353.484 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1353.484 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is error, wrong:  0 , correct:  1
+  1 data is error, wrong:  0 , correct:  2
+  2 data is error, wrong:  0 , correct:  3
+  3 data is error, wrong:  0 , correct:  4
+  4 data is error, wrong:  0 , correct:  5
+  5 data is error, wrong:  0 , correct:  6
+  6 data is error, wrong:  0 , correct:  7
+  7 data is error, wrong:  0 , correct:  8
+  8 data is error, wrong:  0 , correct:  9
+  9 data is error, wrong:  0 , correct: 10
+ 10 data is error, wrong:  0 , correct: 11
+ 11 data is error, wrong:  0 , correct: 12
+ 12 data is error, wrong:  0 , correct: 13
+ 13 data is error, wrong:  0 , correct: 14
+ 14 data is error, wrong:  0 , correct: 15
+ 15 data is error, wrong:  0 , correct: 15
+ 16 data is error, wrong:  0 , correct: 14
+ 17 data is error, wrong:  0 , correct: 13
+ 18 data is error, wrong:  0 , correct: 12
+ 19 data is error, wrong:  0 , correct: 11
+ 20 data is error, wrong:  0 , correct: 10
+ 21 data is error, wrong:  0 , correct:  9
+ 22 data is error, wrong:  0 , correct:  8
+ 23 data is error, wrong:  0 , correct:  7
+ 24 data is error, wrong:  0 , correct:  6
+ 25 data is error, wrong:  0 , correct:  5
+ 26 data is error, wrong:  0 , correct:  4
+ 27 data is error, wrong:  0 , correct:  3
+ 28 data is error, wrong:  0 , correct:  2
+ 29 data is error, wrong:  0 , correct:  1
+ 30 data is correct
+ 31 data is correct
+ 32 data is error, wrong:  0 , correct:  2
+ 33 data is error, wrong:  0 , correct:  4
+ 34 data is error, wrong:  0 , correct:  6
+ 35 data is error, wrong:  0 , correct:  8
+ 36 data is error, wrong:  0 , correct: 10
+ 37 data is error, wrong:  0 , correct: 12
+ 38 data is error, wrong:  0 , correct: 14
+ 39 data is error, wrong:  0 , correct: 15
+ 40 data is error, wrong:  0 , correct: 13
+ 41 data is error, wrong:  0 , correct: 11
+ 42 data is error, wrong:  0 , correct:  9
+ 43 data is error, wrong:  0 , correct:  7
+ 44 data is error, wrong:  0 , correct:  5
+ 45 data is error, wrong:  0 , correct:  3
+ 46 data is error, wrong:  0 , correct:  1
+ 47 data is correct
+ 48 data is error, wrong:  0 , correct:  3
+ 49 data is error, wrong:  0 , correct:  6
+ 50 data is error, wrong:  0 , correct:  9
+ 51 data is error, wrong:  0 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  0 , correct: 15
+ 54 data is error, wrong:  0 , correct: 12
+ 55 data is error, wrong:  0 , correct:  9
+ 56 data is error, wrong:  0 , correct:  6
+ 57 data is error, wrong:  0 , correct:  3
+ 58 data is correct
+ 59 data is correct
+ 60 data is error, wrong:  0 , correct:  1
+ 61 data is error, wrong:  0 , correct:  2
+ 62 data is error, wrong:  0 , correct:  3
+ 63 data is error, wrong:  0 , correct:  4
+ 64 data is error, wrong:  0 , correct:  5
+ 65 data is error, wrong:  0 , correct:  6
+ 66 data is error, wrong:  0 , correct:  7
+ 67 data is error, wrong:  0 , correct: 10
+ 68 data is error, wrong:  0 , correct: 13
+ 69 data is error, wrong:  0 , correct: 15
+ 70 data is error, wrong:  0 , correct: 12
+ 71 data is error, wrong:  0 , correct:  9
+ 72 data is error, wrong:  0 , correct:  6
+ 73 data is error, wrong:  0 , correct:  4
+ 74 data is error, wrong:  0 , correct:  2
+ 75 data is correct
+ 76 data is correct
+ 77 data is error, wrong:  0 , correct:  2
+ 78 data is error, wrong:  0 , correct:  4
+ 79 data is error, wrong:  0 , correct:  7
+ 80 data is error, wrong:  0 , correct: 10
+ 81 data is error, wrong:  0 , correct: 13
+ 82 data is error, wrong:  0 , correct: 15
+ 83 data is error, wrong:  0 , correct: 12
+ 84 data is error, wrong:  0 , correct:  9
+ 85 data is error, wrong:  0 , correct:  6
+ 86 data is error, wrong:  0 , correct:  3
+ 87 data is correct
+ 88 data is correct
+ 89 data is error, wrong:  0 , correct:  3
+ 90 data is error, wrong:  0 , correct:  6
+ 91 data is error, wrong:  0 , correct:  7
+ 92 data is error, wrong:  0 , correct:  8
+ 93 data is error, wrong:  0 , correct:  9
+ 94 data is error, wrong:  0 , correct: 10
+ 95 data is error, wrong:  0 , correct: 11
+ 96 data is error, wrong:  0 , correct: 12
+ 97 data is error, wrong:  0 , correct: 13
+ 98 data is error, wrong:  0 , correct: 14
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1353.484 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+  0 data is error, wrong:  0 , correct:  1
+  1 data is error, wrong:  0 , correct:  2
+  2 data is error, wrong:  0 , correct:  3
+  3 data is error, wrong:  0 , correct:  4
+  4 data is error, wrong:  0 , correct:  5
+  5 data is error, wrong:  0 , correct:  6
+  6 data is error, wrong:  0 , correct:  7
+  7 data is error, wrong:  0 , correct:  8
+  8 data is error, wrong:  0 , correct:  9
+  9 data is error, wrong:  0 , correct: 10
+ 10 data is error, wrong:  0 , correct: 11
+ 11 data is error, wrong:  0 , correct: 12
+ 12 data is error, wrong:  0 , correct: 13
+ 13 data is error, wrong:  0 , correct: 14
+ 14 data is error, wrong:  0 , correct: 15
+ 15 data is error, wrong:  0 , correct: 15
+ 16 data is error, wrong:  0 , correct: 14
+ 17 data is error, wrong:  0 , correct: 13
+ 18 data is error, wrong:  0 , correct: 12
+ 19 data is error, wrong:  0 , correct: 11
+ 20 data is error, wrong:  0 , correct: 10
+ 21 data is error, wrong:  0 , correct:  9
+ 22 data is error, wrong:  0 , correct:  8
+ 23 data is error, wrong:  0 , correct:  7
+ 24 data is error, wrong:  0 , correct:  6
+ 25 data is error, wrong:  0 , correct:  5
+ 26 data is error, wrong:  0 , correct:  4
+ 27 data is error, wrong:  0 , correct:  3
+ 28 data is error, wrong:  0 , correct:  2
+ 29 data is error, wrong:  0 , correct:  1
+ 30 data is correct
+ 31 data is correct
+ 32 data is error, wrong:  0 , correct:  2
+ 33 data is error, wrong:  0 , correct:  4
+ 34 data is error, wrong:  0 , correct:  6
+ 35 data is error, wrong:  0 , correct:  8
+ 36 data is error, wrong:  0 , correct: 10
+ 37 data is error, wrong:  0 , correct: 12
+ 38 data is error, wrong:  0 , correct: 14
+ 39 data is error, wrong:  0 , correct: 15
+ 40 data is error, wrong:  0 , correct: 13
+ 41 data is error, wrong:  0 , correct: 11
+ 42 data is error, wrong:  0 , correct:  9
+ 43 data is error, wrong:  0 , correct:  7
+ 44 data is error, wrong:  0 , correct:  5
+ 45 data is error, wrong:  0 , correct:  3
+ 46 data is error, wrong:  0 , correct:  1
+ 47 data is correct
+ 48 data is error, wrong:  0 , correct:  3
+ 49 data is error, wrong:  0 , correct:  6
+ 50 data is error, wrong:  0 , correct:  9
+ 51 data is error, wrong:  0 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  0 , correct: 15
+ 54 data is error, wrong:  0 , correct: 12
+ 55 data is error, wrong:  0 , correct:  9
+ 56 data is error, wrong:  0 , correct:  6
+ 57 data is error, wrong:  0 , correct:  3
+ 58 data is correct
+ 59 data is correct
+ 60 data is error, wrong:  0 , correct:  1
+ 61 data is error, wrong:  0 , correct:  2
+ 62 data is error, wrong:  0 , correct:  3
+ 63 data is error, wrong:  0 , correct:  4
+ 64 data is error, wrong:  0 , correct:  5
+ 65 data is error, wrong:  0 , correct:  6
+ 66 data is error, wrong:  0 , correct:  7
+ 67 data is error, wrong:  0 , correct: 10
+ 68 data is error, wrong:  0 , correct: 13
+ 69 data is error, wrong:  0 , correct: 15
+ 70 data is error, wrong:  0 , correct: 12
+ 71 data is error, wrong:  0 , correct:  9
+ 72 data is error, wrong:  0 , correct:  6
+ 73 data is error, wrong:  0 , correct:  4
+ 74 data is error, wrong:  0 , correct:  2
+ 75 data is correct
+ 76 data is correct
+ 77 data is error, wrong:  0 , correct:  2
+ 78 data is error, wrong:  0 , correct:  4
+ 79 data is error, wrong:  0 , correct:  7
+ 80 data is error, wrong:  0 , correct: 10
+ 81 data is error, wrong:  0 , correct: 13
+ 82 data is error, wrong:  0 , correct: 15
+ 83 data is error, wrong:  0 , correct: 12
+ 84 data is error, wrong:  0 , correct:  9
+ 85 data is error, wrong:  0 , correct:  6
+ 86 data is error, wrong:  0 , correct:  3
+ 87 data is correct
+ 88 data is correct
+ 89 data is error, wrong:  0 , correct:  3
+ 90 data is error, wrong:  0 , correct:  6
+ 91 data is error, wrong:  0 , correct:  7
+ 92 data is error, wrong:  0 , correct:  8
+ 93 data is error, wrong:  0 , correct:  9
+ 94 data is error, wrong:  0 , correct: 10
+ 95 data is error, wrong:  0 , correct: 11
+ 96 data is error, wrong:  0 , correct: 12
+ 97 data is error, wrong:  0 , correct: 13
+ 98 data is error, wrong:  0 , correct: 14
+ 99 data is error, wrong:  0 , correct: 15
+-------------------   There are  91 errors   -------------------
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 100
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+  0 data is error, wrong:  0 , correct:  1
+  1 data is error, wrong:  0 , correct:  2
+  2 data is error, wrong:  0 , correct:  3
+  3 data is error, wrong:  0 , correct:  4
+  4 data is error, wrong:  0 , correct:  5
+  5 data is error, wrong:  0 , correct:  6
+  6 data is error, wrong:  0 , correct:  7
+  7 data is error, wrong:  0 , correct:  8
+  8 data is error, wrong:  0 , correct:  9
+  9 data is error, wrong:  0 , correct: 10
+ 10 data is error, wrong:  0 , correct: 11
+ 11 data is error, wrong:  0 , correct: 12
+ 12 data is error, wrong:  0 , correct: 13
+ 13 data is error, wrong:  0 , correct: 14
+ 14 data is error, wrong:  0 , correct: 15
+ 15 data is error, wrong:  0 , correct: 15
+ 16 data is error, wrong:  0 , correct: 14
+ 17 data is error, wrong:  0 , correct: 13
+ 18 data is error, wrong:  0 , correct: 12
+ 19 data is error, wrong:  0 , correct: 11
+ 20 data is error, wrong:  0 , correct: 10
+ 21 data is error, wrong:  0 , correct:  9
+ 22 data is error, wrong:  0 , correct:  8
+ 23 data is error, wrong:  0 , correct:  7
+ 24 data is error, wrong:  0 , correct:  6
+ 25 data is error, wrong:  0 , correct:  5
+ 26 data is error, wrong:  0 , correct:  4
+ 27 data is error, wrong:  0 , correct:  3
+ 28 data is error, wrong:  0 , correct:  2
+ 29 data is error, wrong:  0 , correct:  1
+ 30 data is correct
+ 31 data is correct
+ 32 data is error, wrong:  0 , correct:  2
+ 33 data is error, wrong:  0 , correct:  4
+ 34 data is error, wrong:  0 , correct:  6
+ 35 data is error, wrong:  0 , correct:  8
+ 36 data is error, wrong:  0 , correct: 10
+ 37 data is error, wrong:  0 , correct: 12
+ 38 data is error, wrong:  0 , correct: 14
+ 39 data is error, wrong:  0 , correct: 15
+ 40 data is error, wrong:  0 , correct: 13
+ 41 data is error, wrong:  0 , correct: 11
+ 42 data is error, wrong:  0 , correct:  9
+ 43 data is error, wrong:  0 , correct:  7
+ 44 data is error, wrong:  0 , correct:  5
+ 45 data is error, wrong:  0 , correct:  3
+ 46 data is error, wrong:  0 , correct:  1
+ 47 data is correct
+ 48 data is error, wrong:  0 , correct:  3
+ 49 data is error, wrong:  0 , correct:  6
+ 50 data is error, wrong:  0 , correct:  9
+ 51 data is error, wrong:  0 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  0 , correct: 15
+ 54 data is error, wrong:  0 , correct: 12
+ 55 data is error, wrong:  0 , correct:  9
+ 56 data is error, wrong:  0 , correct:  6
+ 57 data is error, wrong:  0 , correct:  3
+ 58 data is correct
+ 59 data is correct
+ 60 data is error, wrong:  0 , correct:  1
+ 61 data is error, wrong:  0 , correct:  2
+ 62 data is error, wrong:  0 , correct:  3
+ 63 data is error, wrong:  0 , correct:  4
+ 64 data is error, wrong:  0 , correct:  5
+ 65 data is error, wrong:  0 , correct:  6
+ 66 data is error, wrong:  0 , correct:  7
+ 67 data is error, wrong:  0 , correct: 10
+ 68 data is error, wrong:  0 , correct: 13
+ 69 data is error, wrong:  0 , correct: 15
+ 70 data is error, wrong:  0 , correct: 12
+ 71 data is error, wrong:  0 , correct:  9
+ 72 data is error, wrong:  0 , correct:  6
+ 73 data is error, wrong:  0 , correct:  4
+ 74 data is error, wrong:  0 , correct:  2
+ 75 data is correct
+ 76 data is correct
+ 77 data is error, wrong:  0 , correct:  2
+ 78 data is error, wrong:  0 , correct:  4
+ 79 data is error, wrong:  0 , correct:  7
+ 80 data is error, wrong:  0 , correct: 10
+ 81 data is error, wrong:  0 , correct: 13
+ 82 data is error, wrong:  0 , correct: 15
+ 83 data is error, wrong:  0 , correct: 12
+ 84 data is error, wrong:  0 , correct:  9
+ 85 data is error, wrong:  0 , correct:  6
+ 86 data is error, wrong:  0 , correct:  3
+ 87 data is correct
+ 88 data is correct
+ 89 data is error, wrong:  0 , correct:  3
+ 90 data is error, wrong:  0 , correct:  6
+ 91 data is error, wrong:  0 , correct:  7
+ 92 data is error, wrong:  0 , correct:  8
+ 93 data is error, wrong:  0 , correct:  9
+ 94 data is error, wrong:  0 , correct: 10
+ 95 data is error, wrong:  0 , correct: 11
+ 96 data is error, wrong:  0 , correct: 12
+ 97 data is error, wrong:  0 , correct: 13
+ 98 data is error, wrong:  0 , correct: 14
+ 99 data is error, wrong:  0 , correct: 15
+-------------------   There are  91 errors   -------------------
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 100
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1353.484 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is error, wrong:  0 , correct:  1
+  1 data is error, wrong:  0 , correct:  2
+  2 data is error, wrong:  0 , correct:  3
+  3 data is error, wrong:  0 , correct:  4
+  4 data is error, wrong:  0 , correct:  5
+  5 data is error, wrong:  0 , correct:  6
+  6 data is error, wrong:  0 , correct:  7
+  7 data is error, wrong:  0 , correct:  8
+  8 data is error, wrong:  0 , correct:  9
+  9 data is error, wrong:  0 , correct: 10
+ 10 data is error, wrong:  0 , correct: 11
+ 11 data is error, wrong:  0 , correct: 12
+ 12 data is error, wrong:  0 , correct: 13
+ 13 data is error, wrong:  0 , correct: 14
+ 14 data is error, wrong:  0 , correct: 15
+ 15 data is error, wrong:  0 , correct: 15
+ 16 data is error, wrong:  0 , correct: 14
+ 17 data is error, wrong:  0 , correct: 13
+ 18 data is error, wrong:  0 , correct: 12
+ 19 data is error, wrong:  0 , correct: 11
+ 20 data is error, wrong:  0 , correct: 10
+ 21 data is error, wrong:  0 , correct:  9
+ 22 data is error, wrong:  0 , correct:  8
+ 23 data is error, wrong:  0 , correct:  7
+ 24 data is error, wrong:  0 , correct:  6
+ 25 data is error, wrong:  0 , correct:  5
+ 26 data is error, wrong:  0 , correct:  4
+ 27 data is error, wrong:  0 , correct:  3
+ 28 data is error, wrong:  0 , correct:  2
+ 29 data is error, wrong:  0 , correct:  1
+ 30 data is correct
+ 31 data is correct
+ 32 data is error, wrong:  0 , correct:  2
+ 33 data is error, wrong:  0 , correct:  4
+ 34 data is error, wrong:  0 , correct:  6
+ 35 data is error, wrong:  0 , correct:  8
+ 36 data is error, wrong:  0 , correct: 10
+ 37 data is error, wrong:  0 , correct: 12
+ 38 data is error, wrong:  0 , correct: 14
+ 39 data is error, wrong:  0 , correct: 15
+ 40 data is error, wrong:  0 , correct: 13
+ 41 data is error, wrong:  0 , correct: 11
+ 42 data is error, wrong:  0 , correct:  9
+ 43 data is error, wrong:  0 , correct:  7
+ 44 data is error, wrong:  0 , correct:  5
+ 45 data is error, wrong:  0 , correct:  3
+ 46 data is error, wrong:  0 , correct:  1
+ 47 data is correct
+ 48 data is error, wrong:  0 , correct:  3
+ 49 data is error, wrong:  0 , correct:  6
+ 50 data is error, wrong:  0 , correct:  9
+ 51 data is error, wrong:  0 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  0 , correct: 15
+ 54 data is error, wrong:  0 , correct: 12
+ 55 data is error, wrong:  0 , correct:  9
+ 56 data is error, wrong:  0 , correct:  6
+ 57 data is error, wrong:  0 , correct:  3
+ 58 data is correct
+ 59 data is correct
+ 60 data is error, wrong:  0 , correct:  1
+ 61 data is error, wrong:  0 , correct:  2
+ 62 data is error, wrong:  0 , correct:  3
+ 63 data is error, wrong:  0 , correct:  4
+ 64 data is error, wrong:  0 , correct:  5
+ 65 data is error, wrong:  0 , correct:  6
+ 66 data is error, wrong:  0 , correct:  7
+ 67 data is error, wrong:  0 , correct: 10
+ 68 data is error, wrong:  0 , correct: 13
+ 69 data is error, wrong:  0 , correct: 15
+ 70 data is error, wrong:  0 , correct: 12
+ 71 data is error, wrong:  0 , correct:  9
+ 72 data is error, wrong:  0 , correct:  6
+ 73 data is error, wrong:  0 , correct:  4
+ 74 data is error, wrong:  0 , correct:  2
+ 75 data is correct
+ 76 data is correct
+ 77 data is error, wrong:  0 , correct:  2
+ 78 data is error, wrong:  0 , correct:  4
+ 79 data is error, wrong:  0 , correct:  7
+ 80 data is error, wrong:  0 , correct: 10
+ 81 data is error, wrong:  0 , correct: 13
+ 82 data is error, wrong:  0 , correct: 15
+ 83 data is error, wrong:  0 , correct: 12
+ 84 data is error, wrong:  0 , correct:  9
+ 85 data is error, wrong:  0 , correct:  6
+ 86 data is error, wrong:  0 , correct:  3
+ 87 data is correct
+ 88 data is correct
+ 89 data is error, wrong:  0 , correct:  3
+ 90 data is error, wrong:  0 , correct:  6
+ 91 data is error, wrong:  0 , correct:  7
+ 92 data is error, wrong:  0 , correct:  8
+ 93 data is error, wrong:  0 , correct:  9
+ 94 data is error, wrong:  0 , correct: 10
+ 95 data is error, wrong:  0 , correct: 11
+ 96 data is error, wrong:  0 , correct: 12
+ 97 data is error, wrong:  0 , correct: 13
+ 98 data is error, wrong:  0 , correct: 14
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1353.484 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+  0 data is error, wrong:  0 , correct:  1
+  1 data is error, wrong:  0 , correct:  2
+  2 data is error, wrong:  0 , correct:  3
+  3 data is error, wrong:  0 , correct:  4
+  4 data is error, wrong:  0 , correct:  5
+  5 data is error, wrong:  0 , correct:  6
+  6 data is error, wrong:  0 , correct:  7
+  7 data is error, wrong:  0 , correct:  8
+  8 data is error, wrong:  0 , correct:  9
+  9 data is error, wrong:  0 , correct: 10
+ 10 data is error, wrong:  0 , correct: 11
+ 11 data is error, wrong:  0 , correct: 12
+ 12 data is error, wrong:  0 , correct: 13
+ 13 data is error, wrong:  0 , correct: 14
+ 14 data is error, wrong:  0 , correct: 15
+ 15 data is error, wrong:  0 , correct: 15
+ 16 data is error, wrong:  0 , correct: 14
+ 17 data is error, wrong:  0 , correct: 13
+ 18 data is error, wrong:  0 , correct: 12
+ 19 data is error, wrong:  0 , correct: 11
+ 20 data is error, wrong:  0 , correct: 10
+ 21 data is error, wrong:  0 , correct:  9
+ 22 data is error, wrong:  0 , correct:  8
+ 23 data is error, wrong:  0 , correct:  7
+ 24 data is error, wrong:  0 , correct:  6
+ 25 data is error, wrong:  0 , correct:  5
+ 26 data is error, wrong:  0 , correct:  4
+ 27 data is error, wrong:  0 , correct:  3
+ 28 data is error, wrong:  0 , correct:  2
+ 29 data is error, wrong:  0 , correct:  1
+ 30 data is correct
+ 31 data is correct
+ 32 data is error, wrong:  0 , correct:  2
+ 33 data is error, wrong:  0 , correct:  4
+ 34 data is error, wrong:  0 , correct:  6
+ 35 data is error, wrong:  0 , correct:  8
+ 36 data is error, wrong:  0 , correct: 10
+ 37 data is error, wrong:  0 , correct: 12
+ 38 data is error, wrong:  0 , correct: 14
+ 39 data is error, wrong:  0 , correct: 15
+ 40 data is error, wrong:  0 , correct: 13
+ 41 data is error, wrong:  0 , correct: 11
+ 42 data is error, wrong:  0 , correct:  9
+ 43 data is error, wrong:  0 , correct:  7
+ 44 data is error, wrong:  0 , correct:  5
+ 45 data is error, wrong:  0 , correct:  3
+ 46 data is error, wrong:  0 , correct:  1
+ 47 data is correct
+ 48 data is error, wrong:  0 , correct:  3
+ 49 data is error, wrong:  0 , correct:  6
+ 50 data is error, wrong:  0 , correct:  9
+ 51 data is error, wrong:  0 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  0 , correct: 15
+ 54 data is error, wrong:  0 , correct: 12
+ 55 data is error, wrong:  0 , correct:  9
+ 56 data is error, wrong:  0 , correct:  6
+ 57 data is error, wrong:  0 , correct:  3
+ 58 data is correct
+ 59 data is correct
+ 60 data is error, wrong:  0 , correct:  1
+ 61 data is error, wrong:  0 , correct:  2
+ 62 data is error, wrong:  0 , correct:  3
+ 63 data is error, wrong:  0 , correct:  4
+ 64 data is error, wrong:  0 , correct:  5
+ 65 data is error, wrong:  0 , correct:  6
+ 66 data is error, wrong:  0 , correct:  7
+ 67 data is error, wrong:  0 , correct: 10
+ 68 data is error, wrong:  0 , correct: 13
+ 69 data is error, wrong:  0 , correct: 15
+ 70 data is error, wrong:  0 , correct: 12
+ 71 data is error, wrong:  0 , correct:  9
+ 72 data is error, wrong:  0 , correct:  6
+ 73 data is error, wrong:  0 , correct:  4
+ 74 data is error, wrong:  0 , correct:  2
+ 75 data is correct
+ 76 data is correct
+ 77 data is error, wrong:  0 , correct:  2
+ 78 data is error, wrong:  0 , correct:  4
+ 79 data is error, wrong:  0 , correct:  7
+ 80 data is error, wrong:  0 , correct: 10
+ 81 data is error, wrong:  0 , correct: 13
+ 82 data is error, wrong:  0 , correct: 15
+ 83 data is error, wrong:  0 , correct: 12
+ 84 data is error, wrong:  0 , correct:  9
+ 85 data is error, wrong:  0 , correct:  6
+ 86 data is error, wrong:  0 , correct:  3
+ 87 data is correct
+ 88 data is correct
+ 89 data is error, wrong:  0 , correct:  3
+ 90 data is error, wrong:  0 , correct:  6
+ 91 data is error, wrong:  0 , correct:  7
+ 92 data is error, wrong:  0 , correct:  8
+ 93 data is error, wrong:  0 , correct:  9
+ 94 data is error, wrong:  0 , correct: 10
+ 95 data is error, wrong:  0 , correct: 11
+ 96 data is error, wrong:  0 , correct: 12
+ 97 data is error, wrong:  0 , correct: 13
+ 98 data is error, wrong:  0 , correct: 14
+ 99 data is error, wrong:  0 , correct: 15
+-------------------   There are  91 errors   -------------------
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 100
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1353.484 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is correct
+  1 data is error, wrong:  0 , correct:  2
+  2 data is error, wrong:  1 , correct:  3
+  3 data is error, wrong:  0 , correct:  4
+  4 data is error, wrong:  1 , correct:  5
+  5 data is error, wrong:  0 , correct:  6
+  6 data is error, wrong:  1 , correct:  7
+  7 data is error, wrong:  0 , correct:  8
+  8 data is error, wrong:  1 , correct:  9
+  9 data is error, wrong:  0 , correct: 10
+ 10 data is error, wrong:  1 , correct: 11
+ 11 data is error, wrong:  0 , correct: 12
+ 12 data is error, wrong:  1 , correct: 13
+ 13 data is error, wrong:  0 , correct: 14
+ 14 data is error, wrong:  1 , correct: 15
+ 15 data is error, wrong:  0 , correct: 15
+ 16 data is error, wrong:  1 , correct: 14
+ 17 data is error, wrong:  0 , correct: 13
+ 18 data is error, wrong:  1 , correct: 12
+ 19 data is error, wrong:  0 , correct: 11
+ 20 data is error, wrong:  1 , correct: 10
+ 21 data is error, wrong:  0 , correct:  9
+ 22 data is error, wrong:  1 , correct:  8
+ 23 data is error, wrong:  0 , correct:  7
+ 24 data is error, wrong:  1 , correct:  6
+ 25 data is error, wrong:  0 , correct:  5
+ 26 data is error, wrong:  1 , correct:  4
+ 27 data is error, wrong:  0 , correct:  3
+ 28 data is error, wrong:  1 , correct:  2
+ 29 data is error, wrong:  0 , correct:  1
+ 30 data is error, wrong:  1 , correct:  0
+ 31 data is error, wrong:  1 , correct:  0
+ 32 data is error, wrong:  1 , correct:  2
+ 33 data is error, wrong:  1 , correct:  4
+ 34 data is error, wrong:  1 , correct:  6
+ 35 data is error, wrong:  1 , correct:  8
+ 36 data is error, wrong:  1 , correct: 10
+ 37 data is error, wrong:  1 , correct: 12
+ 38 data is error, wrong:  1 , correct: 14
+ 39 data is error, wrong:  1 , correct: 15
+ 40 data is error, wrong:  1 , correct: 13
+ 41 data is error, wrong:  1 , correct: 11
+ 42 data is error, wrong:  1 , correct:  9
+ 43 data is error, wrong:  1 , correct:  7
+ 44 data is error, wrong:  1 , correct:  5
+ 45 data is error, wrong:  1 , correct:  3
+ 46 data is correct
+ 47 data is error, wrong:  1 , correct:  0
+ 48 data is error, wrong:  0 , correct:  3
+ 49 data is error, wrong:  1 , correct:  6
+ 50 data is error, wrong:  0 , correct:  9
+ 51 data is error, wrong:  1 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  1 , correct: 15
+ 54 data is error, wrong:  0 , correct: 12
+ 55 data is error, wrong:  1 , correct:  9
+ 56 data is error, wrong:  0 , correct:  6
+ 57 data is error, wrong:  1 , correct:  3
+ 58 data is correct
+ 59 data is error, wrong:  1 , correct:  0
+ 60 data is error, wrong:  0 , correct:  1
+ 61 data is error, wrong:  1 , correct:  2
+ 62 data is error, wrong:  0 , correct:  3
+ 63 data is error, wrong:  1 , correct:  4
+ 64 data is error, wrong:  0 , correct:  5
+ 65 data is error, wrong:  1 , correct:  6
+ 66 data is error, wrong:  0 , correct:  7
+ 67 data is error, wrong:  1 , correct: 10
+ 68 data is error, wrong:  0 , correct: 13
+ 69 data is error, wrong:  1 , correct: 15
+ 70 data is error, wrong:  0 , correct: 12
+ 71 data is error, wrong:  1 , correct:  9
+ 72 data is error, wrong:  0 , correct:  6
+ 73 data is error, wrong:  0 , correct:  4
+ 74 data is error, wrong:  0 , correct:  2
+ 75 data is correct
+ 76 data is correct
+ 77 data is error, wrong:  0 , correct:  2
+ 78 data is error, wrong:  0 , correct:  4
+ 79 data is error, wrong:  1 , correct:  7
+ 80 data is error, wrong:  0 , correct: 10
+ 81 data is error, wrong:  1 , correct: 13
+ 82 data is error, wrong:  0 , correct: 15
+ 83 data is error, wrong:  1 , correct: 12
+ 84 data is error, wrong:  0 , correct:  9
+ 85 data is error, wrong:  1 , correct:  6
+ 86 data is error, wrong:  0 , correct:  3
+ 87 data is error, wrong:  1 , correct:  0
+ 88 data is correct
+ 89 data is error, wrong:  1 , correct:  3
+ 90 data is error, wrong:  0 , correct:  6
+ 91 data is error, wrong:  1 , correct:  7
+ 92 data is error, wrong:  0 , correct:  8
+ 93 data is error, wrong:  1 , correct:  9
+ 94 data is error, wrong:  0 , correct: 10
+ 95 data is error, wrong:  1 , correct: 11
+ 96 data is error, wrong:  0 , correct: 12
+ 97 data is error, wrong:  1 , correct: 13
+ 98 data is error, wrong:  0 , correct: 14
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1355.824 ; gain = 2.340
+run all
+ 99 data is error, wrong:  1 , correct: 15
+-------------------   There are  94 errors   -------------------
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 100
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+  0 data is correct
+  1 data is error, wrong:  0 , correct:  2
+  2 data is error, wrong:  1 , correct:  3
+  3 data is error, wrong:  0 , correct:  4
+  4 data is error, wrong:  1 , correct:  5
+  5 data is error, wrong:  0 , correct:  6
+  6 data is error, wrong:  1 , correct:  7
+  7 data is error, wrong:  0 , correct:  8
+  8 data is error, wrong:  1 , correct:  9
+  9 data is error, wrong:  0 , correct: 10
+ 10 data is error, wrong:  1 , correct: 11
+ 11 data is error, wrong:  0 , correct: 12
+ 12 data is error, wrong:  1 , correct: 13
+ 13 data is error, wrong:  0 , correct: 14
+ 14 data is error, wrong:  1 , correct: 15
+ 15 data is error, wrong:  0 , correct: 15
+ 16 data is error, wrong:  1 , correct: 14
+ 17 data is error, wrong:  0 , correct: 13
+ 18 data is error, wrong:  1 , correct: 12
+ 19 data is error, wrong:  0 , correct: 11
+ 20 data is error, wrong:  1 , correct: 10
+ 21 data is error, wrong:  0 , correct:  9
+ 22 data is error, wrong:  1 , correct:  8
+ 23 data is error, wrong:  0 , correct:  7
+ 24 data is error, wrong:  1 , correct:  6
+ 25 data is error, wrong:  0 , correct:  5
+ 26 data is error, wrong:  1 , correct:  4
+ 27 data is error, wrong:  0 , correct:  3
+ 28 data is error, wrong:  1 , correct:  2
+ 29 data is error, wrong:  0 , correct:  1
+ 30 data is error, wrong:  1 , correct:  0
+ 31 data is error, wrong:  1 , correct:  0
+ 32 data is error, wrong:  1 , correct:  2
+ 33 data is error, wrong:  1 , correct:  4
+ 34 data is error, wrong:  1 , correct:  6
+ 35 data is error, wrong:  1 , correct:  8
+ 36 data is error, wrong:  1 , correct: 10
+ 37 data is error, wrong:  1 , correct: 12
+ 38 data is error, wrong:  1 , correct: 14
+ 39 data is error, wrong:  1 , correct: 15
+ 40 data is error, wrong:  1 , correct: 13
+ 41 data is error, wrong:  1 , correct: 11
+ 42 data is error, wrong:  1 , correct:  9
+ 43 data is error, wrong:  1 , correct:  7
+ 44 data is error, wrong:  1 , correct:  5
+ 45 data is error, wrong:  1 , correct:  3
+ 46 data is correct
+ 47 data is error, wrong:  1 , correct:  0
+ 48 data is error, wrong:  0 , correct:  3
+ 49 data is error, wrong:  1 , correct:  6
+ 50 data is error, wrong:  0 , correct:  9
+ 51 data is error, wrong:  1 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  1 , correct: 15
+ 54 data is error, wrong:  0 , correct: 12
+ 55 data is error, wrong:  1 , correct:  9
+ 56 data is error, wrong:  0 , correct:  6
+ 57 data is error, wrong:  1 , correct:  3
+ 58 data is correct
+ 59 data is error, wrong:  1 , correct:  0
+ 60 data is error, wrong:  0 , correct:  1
+ 61 data is error, wrong:  1 , correct:  2
+ 62 data is error, wrong:  0 , correct:  3
+ 63 data is error, wrong:  1 , correct:  4
+ 64 data is error, wrong:  0 , correct:  5
+ 65 data is error, wrong:  1 , correct:  6
+ 66 data is error, wrong:  0 , correct:  7
+ 67 data is error, wrong:  1 , correct: 10
+ 68 data is error, wrong:  0 , correct: 13
+ 69 data is error, wrong:  1 , correct: 15
+ 70 data is error, wrong:  0 , correct: 12
+ 71 data is error, wrong:  1 , correct:  9
+ 72 data is error, wrong:  0 , correct:  6
+ 73 data is error, wrong:  0 , correct:  4
+ 74 data is error, wrong:  0 , correct:  2
+ 75 data is correct
+ 76 data is correct
+ 77 data is error, wrong:  0 , correct:  2
+ 78 data is error, wrong:  0 , correct:  4
+ 79 data is error, wrong:  1 , correct:  7
+ 80 data is error, wrong:  0 , correct: 10
+ 81 data is error, wrong:  1 , correct: 13
+ 82 data is error, wrong:  0 , correct: 15
+ 83 data is error, wrong:  1 , correct: 12
+ 84 data is error, wrong:  0 , correct:  9
+ 85 data is error, wrong:  1 , correct:  6
+ 86 data is error, wrong:  0 , correct:  3
+ 87 data is error, wrong:  1 , correct:  0
+ 88 data is correct
+ 89 data is error, wrong:  1 , correct:  3
+ 90 data is error, wrong:  0 , correct:  6
+ 91 data is error, wrong:  1 , correct:  7
+ 92 data is error, wrong:  0 , correct:  8
+ 93 data is error, wrong:  1 , correct:  9
+ 94 data is error, wrong:  0 , correct: 10
+ 95 data is error, wrong:  1 , correct: 11
+ 96 data is error, wrong:  0 , correct: 12
+ 97 data is error, wrong:  1 , correct: 13
+ 98 data is error, wrong:  0 , correct: 14
+ 99 data is error, wrong:  1 , correct: 15
+-------------------   There are  94 errors   -------------------
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 100
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1355.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is correct
+  1 data is error, wrong:  0 , correct:  2
+  2 data is error, wrong:  1 , correct:  3
+  3 data is error, wrong:  0 , correct:  4
+  4 data is error, wrong:  1 , correct:  5
+  5 data is error, wrong:  0 , correct:  6
+  6 data is error, wrong:  1 , correct:  7
+  7 data is error, wrong:  0 , correct:  8
+  8 data is error, wrong:  1 , correct:  9
+  9 data is error, wrong:  0 , correct: 10
+ 10 data is error, wrong:  1 , correct: 11
+ 11 data is error, wrong:  0 , correct: 12
+ 12 data is error, wrong:  1 , correct: 13
+ 13 data is error, wrong:  0 , correct: 14
+ 14 data is error, wrong:  1 , correct: 15
+ 15 data is error, wrong:  0 , correct: 15
+ 16 data is error, wrong:  1 , correct: 14
+ 17 data is error, wrong:  0 , correct: 13
+ 18 data is error, wrong:  1 , correct: 12
+ 19 data is error, wrong:  0 , correct: 11
+ 20 data is error, wrong:  1 , correct: 10
+ 21 data is error, wrong:  0 , correct:  9
+ 22 data is error, wrong:  1 , correct:  8
+ 23 data is error, wrong:  0 , correct:  7
+ 24 data is error, wrong:  1 , correct:  6
+ 25 data is error, wrong:  0 , correct:  5
+ 26 data is error, wrong:  1 , correct:  4
+ 27 data is error, wrong:  0 , correct:  3
+ 28 data is error, wrong:  1 , correct:  2
+ 29 data is error, wrong:  0 , correct:  1
+ 30 data is error, wrong:  1 , correct:  0
+ 31 data is error, wrong:  1 , correct:  0
+ 32 data is error, wrong:  1 , correct:  2
+ 33 data is error, wrong:  1 , correct:  4
+ 34 data is error, wrong:  1 , correct:  6
+ 35 data is error, wrong:  1 , correct:  8
+ 36 data is error, wrong:  1 , correct: 10
+ 37 data is error, wrong:  1 , correct: 12
+ 38 data is error, wrong:  1 , correct: 14
+ 39 data is error, wrong:  1 , correct: 15
+ 40 data is error, wrong:  1 , correct: 13
+ 41 data is error, wrong:  1 , correct: 11
+ 42 data is error, wrong:  1 , correct:  9
+ 43 data is error, wrong:  1 , correct:  7
+ 44 data is error, wrong:  1 , correct:  5
+ 45 data is error, wrong:  1 , correct:  3
+ 46 data is correct
+ 47 data is error, wrong:  1 , correct:  0
+ 48 data is error, wrong:  0 , correct:  3
+ 49 data is error, wrong:  1 , correct:  6
+ 50 data is error, wrong:  0 , correct:  9
+ 51 data is error, wrong:  1 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  1 , correct: 15
+ 54 data is error, wrong:  0 , correct: 12
+ 55 data is error, wrong:  1 , correct:  9
+ 56 data is error, wrong:  0 , correct:  6
+ 57 data is error, wrong:  1 , correct:  3
+ 58 data is correct
+ 59 data is error, wrong:  1 , correct:  0
+ 60 data is error, wrong:  0 , correct:  1
+ 61 data is error, wrong:  1 , correct:  2
+ 62 data is error, wrong:  0 , correct:  3
+ 63 data is error, wrong:  1 , correct:  4
+ 64 data is error, wrong:  0 , correct:  5
+ 65 data is error, wrong:  1 , correct:  6
+ 66 data is error, wrong:  0 , correct:  7
+ 67 data is error, wrong:  1 , correct: 10
+ 68 data is error, wrong:  0 , correct: 13
+ 69 data is error, wrong:  1 , correct: 15
+ 70 data is error, wrong:  0 , correct: 12
+ 71 data is error, wrong:  1 , correct:  9
+ 72 data is error, wrong:  0 , correct:  6
+ 73 data is error, wrong:  0 , correct:  4
+ 74 data is error, wrong:  0 , correct:  2
+ 75 data is correct
+ 76 data is correct
+ 77 data is error, wrong:  0 , correct:  2
+ 78 data is error, wrong:  0 , correct:  4
+ 79 data is error, wrong:  1 , correct:  7
+ 80 data is error, wrong:  0 , correct: 10
+ 81 data is error, wrong:  1 , correct: 13
+ 82 data is error, wrong:  0 , correct: 15
+ 83 data is error, wrong:  1 , correct: 12
+ 84 data is error, wrong:  0 , correct:  9
+ 85 data is error, wrong:  1 , correct:  6
+ 86 data is error, wrong:  0 , correct:  3
+ 87 data is error, wrong:  1 , correct:  0
+ 88 data is correct
+ 89 data is error, wrong:  1 , correct:  3
+ 90 data is error, wrong:  0 , correct:  6
+ 91 data is error, wrong:  1 , correct:  7
+ 92 data is error, wrong:  0 , correct:  8
+ 93 data is error, wrong:  1 , correct:  9
+ 94 data is error, wrong:  0 , correct: 10
+ 95 data is error, wrong:  1 , correct: 11
+ 96 data is error, wrong:  0 , correct: 12
+ 97 data is error, wrong:  1 , correct: 13
+ 98 data is error, wrong:  0 , correct: 14
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1356.160 ; gain = 0.336
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1356.160 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is correct
+  1 data is correct
+  2 data is correct
+  3 data is correct
+  4 data is correct
+  5 data is correct
+  6 data is correct
+  7 data is correct
+  8 data is correct
+  9 data is correct
+ 10 data is correct
+ 11 data is correct
+ 12 data is correct
+ 13 data is correct
+ 14 data is correct
+ 15 data is correct
+ 16 data is correct
+ 17 data is correct
+ 18 data is correct
+ 19 data is correct
+ 20 data is correct
+ 21 data is correct
+ 22 data is correct
+ 23 data is correct
+ 24 data is correct
+ 25 data is correct
+ 26 data is correct
+ 27 data is correct
+ 28 data is correct
+ 29 data is correct
+ 30 data is correct
+ 31 data is correct
+ 32 data is correct
+ 33 data is correct
+ 34 data is correct
+ 35 data is correct
+ 36 data is correct
+ 37 data is correct
+ 38 data is correct
+ 39 data is correct
+ 40 data is correct
+ 41 data is error, wrong: 15 , correct: 11
+ 42 data is error, wrong: 15 , correct:  9
+ 43 data is error, wrong: 13 , correct:  7
+ 44 data is error, wrong: 11 , correct:  5
+ 45 data is error, wrong:  9 , correct:  3
+ 46 data is error, wrong:  7 , correct:  1
+ 47 data is error, wrong:  5 , correct:  0
+ 48 data is error, wrong:  2 , correct:  3
+ 49 data is error, wrong: 15 , correct:  6
+ 50 data is error, wrong: 12 , correct:  9
+ 51 data is error, wrong:  9 , correct: 12
+ 52 data is error, wrong:  6 , correct: 15
+ 53 data is error, wrong:  3 , correct: 15
+ 54 data is error, wrong:  0 , correct: 12
+ 55 data is error, wrong:  0 , correct:  9
+ 56 data is error, wrong:  3 , correct:  6
+ 57 data is error, wrong:  6 , correct:  3
+ 58 data is error, wrong:  9 , correct:  0
+ 59 data is error, wrong: 12 , correct:  0
+ 60 data is error, wrong: 13 , correct:  1
+ 61 data is error, wrong: 14 , correct:  2
+ 62 data is error, wrong: 15 , correct:  3
+ 63 data is error, wrong: 15 , correct:  4
+ 64 data is error, wrong: 14 , correct:  5
+ 65 data is error, wrong: 13 , correct:  6
+ 66 data is error, wrong: 12 , correct:  7
+ 67 data is error, wrong:  9 , correct: 10
+ 68 data is error, wrong:  6 , correct: 13
+ 69 data is error, wrong:  3 , correct: 15
+ 70 data is error, wrong:  0 , correct: 12
+ 71 data is error, wrong:  0 , correct:  9
+ 72 data is error, wrong:  3 , correct:  6
+ 73 data is error, wrong:  5 , correct:  4
+ 74 data is error, wrong:  7 , correct:  2
+ 75 data is error, wrong:  9 , correct:  0
+ 76 data is error, wrong: 11 , correct:  0
+ 77 data is error, wrong: 13 , correct:  2
+ 78 data is error, wrong: 15 , correct:  4
+ 79 data is error, wrong: 15 , correct:  7
+ 80 data is error, wrong: 12 , correct: 10
+ 81 data is error, wrong:  9 , correct: 13
+ 82 data is error, wrong:  6 , correct: 15
+ 83 data is error, wrong:  3 , correct: 12
+ 84 data is error, wrong:  0 , correct:  9
+ 85 data is error, wrong:  0 , correct:  6
+ 86 data is correct
+ 87 data is error, wrong:  6 , correct:  0
+ 88 data is error, wrong:  9 , correct:  0
+ 89 data is error, wrong: 12 , correct:  3
+ 90 data is error, wrong: 15 , correct:  6
+ 91 data is error, wrong: 15 , correct:  7
+ 92 data is error, wrong: 14 , correct:  8
+ 93 data is error, wrong: 13 , correct:  9
+ 94 data is error, wrong: 12 , correct: 10
+ 95 data is correct
+ 96 data is error, wrong: 10 , correct: 12
+ 97 data is error, wrong:  9 , correct: 13
+ 98 data is error, wrong:  8 , correct: 14
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1356.980 ; gain = 0.820
+run all
+ 99 data is error, wrong:  7 , correct: 15
+-------------------   There are  57 errors   -------------------
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 100
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1356.980 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is correct
+  1 data is correct
+  2 data is correct
+  3 data is correct
+  4 data is correct
+  5 data is correct
+  6 data is correct
+  7 data is correct
+  8 data is correct
+  9 data is correct
+ 10 data is correct
+ 11 data is correct
+ 12 data is correct
+ 13 data is correct
+ 14 data is correct
+ 15 data is correct
+ 16 data is correct
+ 17 data is correct
+ 18 data is correct
+ 19 data is correct
+ 20 data is correct
+ 21 data is correct
+ 22 data is correct
+ 23 data is correct
+ 24 data is correct
+ 25 data is correct
+ 26 data is correct
+ 27 data is correct
+ 28 data is correct
+ 29 data is correct
+ 30 data is correct
+ 31 data is correct
+ 32 data is correct
+ 33 data is correct
+ 34 data is correct
+ 35 data is correct
+ 36 data is correct
+ 37 data is correct
+ 38 data is correct
+ 39 data is correct
+ 40 data is correct
+ 41 data is correct
+ 42 data is correct
+ 43 data is correct
+ 44 data is correct
+ 45 data is correct
+ 46 data is correct
+ 47 data is error, wrong: 15 , correct:  0
+ 48 data is error, wrong: 12 , correct:  3
+ 49 data is error, wrong:  9 , correct:  6
+ 50 data is error, wrong:  6 , correct:  9
+ 51 data is error, wrong:  3 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  0 , correct: 15
+ 54 data is error, wrong:  3 , correct: 12
+ 55 data is error, wrong:  6 , correct:  9
+ 56 data is error, wrong:  9 , correct:  6
+ 57 data is error, wrong: 12 , correct:  3
+ 58 data is error, wrong: 15 , correct:  0
+ 59 data is error, wrong: 15 , correct:  0
+ 60 data is error, wrong: 14 , correct:  1
+ 61 data is error, wrong: 13 , correct:  2
+ 62 data is error, wrong: 12 , correct:  3
+ 63 data is error, wrong: 11 , correct:  4
+ 64 data is error, wrong: 10 , correct:  5
+ 65 data is error, wrong:  9 , correct:  6
+ 66 data is error, wrong:  8 , correct:  7
+ 67 data is error, wrong:  5 , correct: 10
+ 68 data is error, wrong:  2 , correct: 13
+ 69 data is correct
+ 70 data is correct
+ 71 data is correct
+ 72 data is correct
+ 73 data is correct
+ 74 data is correct
+ 75 data is correct
+ 76 data is correct
+ 77 data is correct
+ 78 data is correct
+ 79 data is correct
+ 80 data is correct
+ 81 data is correct
+ 82 data is correct
+ 83 data is correct
+ 84 data is correct
+ 85 data is correct
+ 86 data is correct
+ 87 data is correct
+ 88 data is correct
+ 89 data is correct
+ 90 data is correct
+ 91 data is correct
+ 92 data is correct
+ 93 data is correct
+ 94 data is correct
+ 95 data is correct
+ 96 data is correct
+ 97 data is correct
+ 98 data is correct
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1357.516 ; gain = 0.535
+run all
+ 99 data is correct
+-------------------   There are  22 errors   -------------------
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 100
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_project
+open_project {D:/NCKU/Introduction to DIC/midterm_project/midterm_project.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xlinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1357.516 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1359.215 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is error, wrong: 15 , correct:  1
+  1 data is error, wrong: 15 , correct:  2
+  2 data is error, wrong: 15 , correct:  3
+  3 data is error, wrong: 15 , correct:  4
+  4 data is error, wrong: 15 , correct:  5
+  5 data is error, wrong: 15 , correct:  6
+  6 data is error, wrong: 15 , correct:  7
+  7 data is error, wrong: 15 , correct:  8
+  8 data is error, wrong: 15 , correct:  9
+  9 data is error, wrong: 15 , correct: 10
+ 10 data is error, wrong: 15 , correct: 11
+ 11 data is error, wrong: 15 , correct: 12
+ 12 data is error, wrong: 15 , correct: 13
+ 13 data is error, wrong: 15 , correct: 14
+ 14 data is correct
+ 15 data is correct
+ 16 data is error, wrong: 15 , correct: 14
+ 17 data is error, wrong: 15 , correct: 13
+ 18 data is error, wrong: 15 , correct: 12
+ 19 data is error, wrong: 15 , correct: 11
+ 20 data is error, wrong: 15 , correct: 10
+ 21 data is error, wrong: 15 , correct:  9
+ 22 data is error, wrong: 15 , correct:  8
+ 23 data is error, wrong: 15 , correct:  7
+ 24 data is error, wrong: 15 , correct:  6
+ 25 data is error, wrong: 15 , correct:  5
+ 26 data is error, wrong: 15 , correct:  4
+ 27 data is error, wrong: 15 , correct:  3
+ 28 data is error, wrong: 15 , correct:  2
+ 29 data is error, wrong: 15 , correct:  1
+ 30 data is error, wrong: 15 , correct:  0
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:51 . Memory (MB): peak = 1363.262 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:55 . Memory (MB): peak = 1363.262 ; gain = 4.047
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:01:11 . Memory (MB): peak = 1363.262 ; gain = 5.746
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1370.633 ; gain = 7.371
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1370.633 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1370.633 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1370.633 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is correct
+  1 data is correct
+  2 data is correct
+  3 data is correct
+  4 data is correct
+  5 data is correct
+  6 data is correct
+  7 data is correct
+  8 data is correct
+  9 data is correct
+ 10 data is correct
+ 11 data is correct
+ 12 data is correct
+ 13 data is correct
+ 14 data is correct
+ 15 data is correct
+ 16 data is correct
+ 17 data is correct
+ 18 data is correct
+ 19 data is correct
+ 20 data is correct
+ 21 data is correct
+ 22 data is correct
+ 23 data is correct
+ 24 data is correct
+ 25 data is correct
+ 26 data is correct
+ 27 data is correct
+ 28 data is correct
+ 29 data is correct
+ 30 data is correct
+ 31 data is correct
+ 32 data is correct
+ 33 data is correct
+ 34 data is correct
+ 35 data is correct
+ 36 data is correct
+ 37 data is correct
+ 38 data is correct
+ 39 data is correct
+ 40 data is correct
+ 41 data is correct
+ 42 data is correct
+ 43 data is correct
+ 44 data is correct
+ 45 data is correct
+ 46 data is correct
+ 47 data is error, wrong: 15 , correct:  0
+ 48 data is error, wrong: 12 , correct:  3
+ 49 data is error, wrong:  9 , correct:  6
+ 50 data is error, wrong:  6 , correct:  9
+ 51 data is error, wrong:  3 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  0 , correct: 15
+ 54 data is error, wrong:  3 , correct: 12
+ 55 data is error, wrong:  6 , correct:  9
+ 56 data is error, wrong:  9 , correct:  6
+ 57 data is error, wrong: 12 , correct:  3
+ 58 data is error, wrong: 15 , correct:  0
+ 59 data is error, wrong: 15 , correct:  0
+ 60 data is error, wrong: 14 , correct:  1
+ 61 data is error, wrong: 13 , correct:  2
+ 62 data is error, wrong: 12 , correct:  3
+ 63 data is error, wrong: 11 , correct:  4
+ 64 data is error, wrong: 10 , correct:  5
+ 65 data is error, wrong:  9 , correct:  6
+ 66 data is error, wrong:  8 , correct:  7
+ 67 data is error, wrong:  5 , correct: 10
+ 68 data is error, wrong:  2 , correct: 13
+ 69 data is correct
+ 70 data is correct
+ 71 data is correct
+ 72 data is correct
+ 73 data is correct
+ 74 data is correct
+ 75 data is correct
+ 76 data is correct
+ 77 data is correct
+ 78 data is correct
+ 79 data is correct
+ 80 data is correct
+ 81 data is correct
+ 82 data is correct
+ 83 data is correct
+ 84 data is correct
+ 85 data is correct
+ 86 data is correct
+ 87 data is correct
+ 88 data is correct
+ 89 data is correct
+ 90 data is correct
+ 91 data is correct
+ 92 data is correct
+ 93 data is correct
+ 94 data is correct
+ 95 data is correct
+ 96 data is correct
+ 97 data is correct
+ 98 data is correct
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 1371.344 ; gain = 0.711
+run all
+ 99 data is correct
+-------------------   There are  22 errors   -------------------
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 100
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is correct
+  1 data is correct
+  2 data is correct
+  3 data is correct
+  4 data is correct
+  5 data is correct
+  6 data is correct
+  7 data is correct
+  8 data is correct
+  9 data is correct
+ 10 data is correct
+ 11 data is correct
+ 12 data is correct
+ 13 data is correct
+ 14 data is correct
+ 15 data is correct
+ 16 data is correct
+ 17 data is correct
+ 18 data is correct
+ 19 data is correct
+ 20 data is correct
+ 21 data is correct
+ 22 data is correct
+ 23 data is correct
+ 24 data is correct
+ 25 data is correct
+ 26 data is correct
+ 27 data is correct
+ 28 data is correct
+ 29 data is correct
+ 30 data is correct
+ 31 data is correct
+ 32 data is correct
+ 33 data is correct
+ 34 data is correct
+ 35 data is correct
+ 36 data is correct
+ 37 data is correct
+ 38 data is correct
+ 39 data is correct
+ 40 data is correct
+ 41 data is correct
+ 42 data is correct
+ 43 data is correct
+ 44 data is correct
+ 45 data is correct
+ 46 data is correct
+ 47 data is error, wrong: 15 , correct:  0
+ 48 data is error, wrong: 12 , correct:  3
+ 49 data is error, wrong:  9 , correct:  6
+ 50 data is error, wrong:  6 , correct:  9
+ 51 data is error, wrong:  3 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  0 , correct: 15
+ 54 data is error, wrong:  3 , correct: 12
+ 55 data is error, wrong:  6 , correct:  9
+ 56 data is error, wrong:  9 , correct:  6
+ 57 data is error, wrong: 12 , correct:  3
+ 58 data is error, wrong: 15 , correct:  0
+ 59 data is error, wrong: 15 , correct:  0
+ 60 data is error, wrong: 14 , correct:  1
+ 61 data is error, wrong: 13 , correct:  2
+ 62 data is error, wrong: 12 , correct:  3
+ 63 data is error, wrong: 11 , correct:  4
+ 64 data is error, wrong: 10 , correct:  5
+ 65 data is error, wrong:  9 , correct:  6
+ 66 data is error, wrong:  8 , correct:  7
+ 67 data is error, wrong:  5 , correct: 10
+ 68 data is error, wrong:  2 , correct: 13
+ 69 data is correct
+ 70 data is correct
+ 71 data is correct
+ 72 data is correct
+ 73 data is correct
+ 74 data is correct
+ 75 data is correct
+ 76 data is correct
+ 77 data is correct
+ 78 data is correct
+ 79 data is correct
+ 80 data is correct
+ 81 data is correct
+ 82 data is correct
+ 83 data is correct
+ 84 data is correct
+ 85 data is correct
+ 86 data is correct
+ 87 data is correct
+ 88 data is correct
+ 89 data is correct
+ 90 data is correct
+ 91 data is correct
+ 92 data is correct
+ 93 data is correct
+ 94 data is correct
+ 95 data is correct
+ 96 data is correct
+ 97 data is correct
+ 98 data is correct
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1371.344 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+  0 data is correct
+  1 data is correct
+  2 data is correct
+  3 data is correct
+  4 data is correct
+  5 data is correct
+  6 data is correct
+  7 data is correct
+  8 data is correct
+  9 data is correct
+ 10 data is correct
+ 11 data is correct
+ 12 data is correct
+ 13 data is correct
+ 14 data is correct
+ 15 data is correct
+ 16 data is correct
+ 17 data is correct
+ 18 data is correct
+ 19 data is correct
+ 20 data is correct
+ 21 data is correct
+ 22 data is correct
+ 23 data is correct
+ 24 data is correct
+ 25 data is correct
+ 26 data is correct
+ 27 data is correct
+ 28 data is correct
+ 29 data is correct
+ 30 data is correct
+ 31 data is correct
+ 32 data is correct
+ 33 data is correct
+ 34 data is correct
+ 35 data is correct
+ 36 data is correct
+ 37 data is correct
+ 38 data is correct
+ 39 data is correct
+ 40 data is correct
+ 41 data is correct
+ 42 data is correct
+ 43 data is correct
+ 44 data is correct
+ 45 data is correct
+ 46 data is correct
+ 47 data is error, wrong: 15 , correct:  0
+ 48 data is error, wrong: 12 , correct:  3
+ 49 data is error, wrong:  9 , correct:  6
+ 50 data is error, wrong:  6 , correct:  9
+ 51 data is error, wrong:  3 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  0 , correct: 15
+ 54 data is error, wrong:  3 , correct: 12
+ 55 data is error, wrong:  6 , correct:  9
+ 56 data is error, wrong:  9 , correct:  6
+ 57 data is error, wrong: 12 , correct:  3
+ 58 data is error, wrong: 15 , correct:  0
+ 59 data is error, wrong: 15 , correct:  0
+ 60 data is error, wrong: 14 , correct:  1
+ 61 data is error, wrong: 13 , correct:  2
+ 62 data is error, wrong: 12 , correct:  3
+ 63 data is error, wrong: 11 , correct:  4
+ 64 data is error, wrong: 10 , correct:  5
+ 65 data is error, wrong:  9 , correct:  6
+ 66 data is error, wrong:  8 , correct:  7
+ 67 data is error, wrong:  5 , correct: 10
+ 68 data is error, wrong:  2 , correct: 13
+ 69 data is correct
+ 70 data is correct
+ 71 data is correct
+ 72 data is correct
+ 73 data is correct
+ 74 data is correct
+ 75 data is correct
+ 76 data is correct
+ 77 data is correct
+ 78 data is correct
+ 79 data is correct
+ 80 data is correct
+ 81 data is correct
+ 82 data is correct
+ 83 data is correct
+ 84 data is correct
+ 85 data is correct
+ 86 data is correct
+ 87 data is correct
+ 88 data is correct
+ 89 data is correct
+ 90 data is correct
+ 91 data is correct
+ 92 data is correct
+ 93 data is correct
+ 94 data is correct
+ 95 data is correct
+ 96 data is correct
+ 97 data is correct
+ 98 data is correct
+ 99 data is correct
+-------------------   There are  22 errors   -------------------
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 100
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1371.344 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1371.344 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is correct
+  1 data is correct
+  2 data is correct
+  3 data is correct
+  4 data is correct
+  5 data is correct
+  6 data is correct
+  7 data is correct
+  8 data is correct
+  9 data is correct
+ 10 data is correct
+ 11 data is correct
+ 12 data is correct
+ 13 data is correct
+ 14 data is correct
+ 15 data is correct
+ 16 data is correct
+ 17 data is correct
+ 18 data is correct
+ 19 data is correct
+ 20 data is correct
+ 21 data is correct
+ 22 data is correct
+ 23 data is correct
+ 24 data is correct
+ 25 data is correct
+ 26 data is correct
+ 27 data is correct
+ 28 data is correct
+ 29 data is correct
+ 30 data is correct
+ 31 data is correct
+ 32 data is correct
+ 33 data is correct
+ 34 data is correct
+ 35 data is correct
+ 36 data is correct
+ 37 data is correct
+ 38 data is correct
+ 39 data is correct
+ 40 data is correct
+ 41 data is correct
+ 42 data is correct
+ 43 data is correct
+ 44 data is correct
+ 45 data is correct
+ 46 data is correct
+ 47 data is error, wrong: 15 , correct:  0
+ 48 data is error, wrong: 12 , correct:  3
+ 49 data is error, wrong:  9 , correct:  6
+ 50 data is error, wrong:  6 , correct:  9
+ 51 data is error, wrong:  3 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  0 , correct: 15
+ 54 data is error, wrong:  3 , correct: 12
+ 55 data is error, wrong:  6 , correct:  9
+ 56 data is error, wrong:  9 , correct:  6
+ 57 data is error, wrong: 12 , correct:  3
+ 58 data is error, wrong: 15 , correct:  0
+ 59 data is error, wrong: 15 , correct:  0
+ 60 data is error, wrong: 14 , correct:  1
+ 61 data is error, wrong: 13 , correct:  2
+ 62 data is error, wrong: 12 , correct:  3
+ 63 data is error, wrong: 11 , correct:  4
+ 64 data is error, wrong: 10 , correct:  5
+ 65 data is error, wrong:  9 , correct:  6
+ 66 data is error, wrong:  8 , correct:  7
+ 67 data is error, wrong:  5 , correct: 10
+ 68 data is error, wrong:  2 , correct: 13
+ 69 data is correct
+ 70 data is correct
+ 71 data is correct
+ 72 data is correct
+ 73 data is correct
+ 74 data is correct
+ 75 data is correct
+ 76 data is correct
+ 77 data is correct
+ 78 data is correct
+ 79 data is correct
+ 80 data is correct
+ 81 data is correct
+ 82 data is correct
+ 83 data is correct
+ 84 data is correct
+ 85 data is correct
+ 86 data is correct
+ 87 data is correct
+ 88 data is correct
+ 89 data is correct
+ 90 data is correct
+ 91 data is correct
+ 92 data is correct
+ 93 data is correct
+ 94 data is correct
+ 95 data is correct
+ 96 data is correct
+ 97 data is correct
+ 98 data is correct
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1383.164 ; gain = 11.820
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+  0 data is correct
+  1 data is correct
+  2 data is correct
+  3 data is correct
+  4 data is correct
+  5 data is correct
+  6 data is correct
+  7 data is correct
+  8 data is correct
+  9 data is correct
+ 10 data is correct
+ 11 data is correct
+ 12 data is correct
+ 13 data is correct
+ 14 data is correct
+ 15 data is correct
+ 16 data is correct
+ 17 data is correct
+ 18 data is correct
+ 19 data is correct
+ 20 data is correct
+ 21 data is correct
+ 22 data is correct
+ 23 data is correct
+ 24 data is correct
+ 25 data is correct
+ 26 data is correct
+ 27 data is correct
+ 28 data is correct
+ 29 data is correct
+ 30 data is correct
+ 31 data is correct
+ 32 data is correct
+ 33 data is correct
+ 34 data is correct
+ 35 data is correct
+ 36 data is correct
+ 37 data is correct
+ 38 data is correct
+ 39 data is correct
+ 40 data is correct
+ 41 data is correct
+ 42 data is correct
+ 43 data is correct
+ 44 data is correct
+ 45 data is correct
+ 46 data is correct
+ 47 data is error, wrong: 15 , correct:  0
+ 48 data is error, wrong: 12 , correct:  3
+ 49 data is error, wrong:  9 , correct:  6
+ 50 data is error, wrong:  6 , correct:  9
+ 51 data is error, wrong:  3 , correct: 12
+ 52 data is error, wrong:  0 , correct: 15
+ 53 data is error, wrong:  0 , correct: 15
+ 54 data is error, wrong:  3 , correct: 12
+ 55 data is error, wrong:  6 , correct:  9
+ 56 data is error, wrong:  9 , correct:  6
+ 57 data is error, wrong: 12 , correct:  3
+ 58 data is error, wrong: 15 , correct:  0
+ 59 data is error, wrong: 15 , correct:  0
+ 60 data is error, wrong: 14 , correct:  1
+ 61 data is error, wrong: 13 , correct:  2
+ 62 data is error, wrong: 12 , correct:  3
+ 63 data is error, wrong: 11 , correct:  4
+ 64 data is error, wrong: 10 , correct:  5
+ 65 data is error, wrong:  9 , correct:  6
+ 66 data is error, wrong:  8 , correct:  7
+ 67 data is error, wrong:  5 , correct: 10
+ 68 data is error, wrong:  2 , correct: 13
+ 69 data is correct
+ 70 data is correct
+ 71 data is correct
+ 72 data is correct
+ 73 data is correct
+ 74 data is correct
+ 75 data is correct
+ 76 data is correct
+ 77 data is correct
+ 78 data is correct
+ 79 data is correct
+ 80 data is correct
+ 81 data is correct
+ 82 data is correct
+ 83 data is correct
+ 84 data is correct
+ 85 data is correct
+ 86 data is correct
+ 87 data is correct
+ 88 data is correct
+ 89 data is correct
+ 90 data is correct
+ 91 data is correct
+ 92 data is correct
+ 93 data is correct
+ 94 data is correct
+ 95 data is correct
+ 96 data is correct
+ 97 data is correct
+ 98 data is correct
+ 99 data is correct
+-------------------   There are  22 errors   -------------------
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 100
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1385.270 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1385.270 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is correct
+  1 data is correct
+  2 data is correct
+  3 data is correct
+  4 data is correct
+  5 data is correct
+  6 data is correct
+  7 data is correct
+  8 data is correct
+  9 data is correct
+ 10 data is correct
+ 11 data is correct
+ 12 data is correct
+ 13 data is correct
+ 14 data is correct
+ 15 data is correct
+ 16 data is correct
+ 17 data is correct
+ 18 data is correct
+ 19 data is correct
+ 20 data is correct
+ 21 data is correct
+ 22 data is correct
+ 23 data is correct
+ 24 data is correct
+ 25 data is correct
+ 26 data is correct
+ 27 data is correct
+ 28 data is correct
+ 29 data is correct
+ 30 data is correct
+ 31 data is correct
+ 32 data is correct
+ 33 data is correct
+ 34 data is correct
+ 35 data is correct
+ 36 data is correct
+ 37 data is correct
+ 38 data is correct
+ 39 data is correct
+ 40 data is correct
+ 41 data is correct
+ 42 data is correct
+ 43 data is correct
+ 44 data is correct
+ 45 data is correct
+ 46 data is correct
+ 47 data is correct
+ 48 data is correct
+ 49 data is correct
+ 50 data is correct
+ 51 data is correct
+ 52 data is correct
+ 53 data is correct
+ 54 data is correct
+ 55 data is correct
+ 56 data is correct
+ 57 data is correct
+ 58 data is correct
+ 59 data is correct
+ 60 data is correct
+ 61 data is correct
+ 62 data is correct
+ 63 data is correct
+ 64 data is correct
+ 65 data is correct
+ 66 data is correct
+ 67 data is correct
+ 68 data is correct
+ 69 data is correct
+ 70 data is correct
+ 71 data is correct
+ 72 data is correct
+ 73 data is correct
+ 74 data is correct
+ 75 data is correct
+ 76 data is correct
+ 77 data is correct
+ 78 data is correct
+ 79 data is correct
+ 80 data is correct
+ 81 data is correct
+ 82 data is correct
+ 83 data is correct
+ 84 data is correct
+ 85 data is correct
+ 86 data is correct
+ 87 data is correct
+ 88 data is correct
+ 89 data is correct
+ 90 data is correct
+ 91 data is correct
+ 92 data is correct
+ 93 data is correct
+ 94 data is correct
+ 95 data is correct
+ 96 data is correct
+ 97 data is correct
+ 98 data is correct
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1386.703 ; gain = 1.434
+run all
+ 99 data is correct
+-------------------   counter check successfully   -------------------
+            $$              
+           $  $
+           $  $
+          $   $
+         $    $
+$$$$$$$$$     $$$$$$$$
+$$$$$$$              $
+$$$$$$$              $
+$$$$$$$              $
+$$$$$$$              $
+$$$$$$$              $
+$$$$$$$$$$$$         $$
+$$$$$      $$$$$$$$$$
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 96
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/xlinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim/golden.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+"xelab -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xlinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0478931f13774249b8b435af482cae92 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/NCKU/Introduction to DIC/midterm_project/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1386.703 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+  0 data is correct
+  1 data is correct
+  2 data is correct
+  3 data is correct
+  4 data is correct
+  5 data is correct
+  6 data is correct
+  7 data is correct
+  8 data is correct
+  9 data is correct
+ 10 data is correct
+ 11 data is correct
+ 12 data is correct
+ 13 data is correct
+ 14 data is correct
+ 15 data is correct
+ 16 data is correct
+ 17 data is correct
+ 18 data is correct
+ 19 data is correct
+ 20 data is correct
+ 21 data is correct
+ 22 data is correct
+ 23 data is correct
+ 24 data is correct
+ 25 data is correct
+ 26 data is correct
+ 27 data is correct
+ 28 data is correct
+ 29 data is correct
+ 30 data is correct
+ 31 data is correct
+ 32 data is correct
+ 33 data is correct
+ 34 data is correct
+ 35 data is correct
+ 36 data is correct
+ 37 data is correct
+ 38 data is correct
+ 39 data is correct
+ 40 data is correct
+ 41 data is correct
+ 42 data is correct
+ 43 data is correct
+ 44 data is correct
+ 45 data is correct
+ 46 data is correct
+ 47 data is correct
+ 48 data is correct
+ 49 data is correct
+ 50 data is correct
+ 51 data is correct
+ 52 data is correct
+ 53 data is correct
+ 54 data is correct
+ 55 data is correct
+ 56 data is correct
+ 57 data is correct
+ 58 data is correct
+ 59 data is correct
+ 60 data is correct
+ 61 data is correct
+ 62 data is correct
+ 63 data is correct
+ 64 data is correct
+ 65 data is correct
+ 66 data is correct
+ 67 data is correct
+ 68 data is correct
+ 69 data is correct
+ 70 data is correct
+ 71 data is correct
+ 72 data is correct
+ 73 data is correct
+ 74 data is correct
+ 75 data is correct
+ 76 data is correct
+ 77 data is correct
+ 78 data is correct
+ 79 data is correct
+ 80 data is correct
+ 81 data is correct
+ 82 data is correct
+ 83 data is correct
+ 84 data is correct
+ 85 data is correct
+ 86 data is correct
+ 87 data is correct
+ 88 data is correct
+ 89 data is correct
+ 90 data is correct
+ 91 data is correct
+ 92 data is correct
+ 93 data is correct
+ 94 data is correct
+ 95 data is correct
+ 96 data is correct
+ 97 data is correct
+ 98 data is correct
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1386.703 ; gain = 0.000
+run all
+ 99 data is correct
+-------------------   counter check successfully   -------------------
+            $$              
+           $  $
+           $  $
+          $   $
+         $    $
+$$$$$$$$$     $$$$$$$$
+$$$$$$$              $
+$$$$$$$              $
+$$$$$$$              $
+$$$$$$$              $
+$$$$$$$              $
+$$$$$$$$$$$$         $$
+$$$$$      $$$$$$$$$$
+$finish called at time : 1020 ns : File "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" Line 96
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 21 02:56:10 2022...

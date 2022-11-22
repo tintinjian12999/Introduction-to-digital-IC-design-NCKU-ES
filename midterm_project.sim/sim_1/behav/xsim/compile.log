@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/NCKU/Introduction to DIC/midterm_project/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture

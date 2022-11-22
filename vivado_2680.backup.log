@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Nov 21 00:57:41 2022
+# Process ID: 2680
+# Current directory: D:/NCKU/Introduction to DIC/midterm_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22764 D:\NCKU\Introduction to DIC\midterm_project\midterm_project.xpr
+# Log file: D:/NCKU/Introduction to DIC/midterm_project/vivado.log
+# Journal file: D:/NCKU/Introduction to DIC/midterm_project\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/xlinx/Vivado/2021.1/scripts/Vivado_init.tcl'
+start_gui
+open_project {D:/NCKU/Introduction to DIC/midterm_project/midterm_project.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/NCKU/Introduction to DIC/midterm_project/midterm_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xlinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:01:34 ; elapsed = 00:01:27 . Memory (MB): peak = 1248.684 ; gain = 109.543
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 21 01:01:38 2022...
